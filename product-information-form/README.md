@@ -1,3 +1,9 @@
+Product information form - recruitment task for eStore Labs. 
+Install dependencies by `npm install` next, run `npm start` to run app.
+
+Made by Piotr Tomczak
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

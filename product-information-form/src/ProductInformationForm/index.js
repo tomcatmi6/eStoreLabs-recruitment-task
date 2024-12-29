@@ -11,15 +11,13 @@ const schema = z.object({
   productTitle: z.string().nonempty("Product title is required"),
   productDescription: z.string().optional(),
   productBullets: z.array(z.string()).optional(),
-  productKeywords: z.array(z.string()).optional(),
+  productKeywords: z.string().optional(),
 });
 
 function ProductInformationForm() {
   const {
     control,
     handleSubmit,
-    watch,
-    setValue,
     register,
     formState: { errors },
   } = useForm({
@@ -28,12 +26,12 @@ function ProductInformationForm() {
       productTitle: "",
       productDescription: "",
       productBullets: [],
-      productKeywords: [],
+      productKeywords: "",
     },
   });
 
   const onSubmit = (data) => {
-    console.log(data);
+    console.log(data, 'submitted data');
   };
 
   return (
