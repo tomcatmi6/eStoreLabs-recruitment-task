@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+
+.bullet-container {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  min-height: 100px;
+}
+
+.bullet-item {
+  background: white;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  cursor: grab;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.bullet-item:hover {
+  background-color: #f0f0f0;
+}
+
+.placeholder {
+  border: 1px dashed #aaa;
+  background: #e0e0e0;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: center;
+  color: #666;
+}

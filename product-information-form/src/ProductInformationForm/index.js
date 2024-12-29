@@ -58,10 +58,7 @@ function ProductInformationForm() {
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label>Product Bullets</Form.Label>
-          <ProductBullets
-            bullets={watch("productBullets", [])}
-            setBullets={(value) => setValue("productBullets", value)}
-          />
+          <ProductBullets initialBullets={["Bullet 1", "Bullet 2", "Bullet 3"]} />
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label>Product Keywords</Form.Label>
